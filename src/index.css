@@ -2,8 +2,8 @@
 position: absolute;
 width: 300px;
 height: 55px;
-left: 261px;
-top: 32px;
+top : 5%;
+left: 15%;
 border: 1px solid #BDBDBD;
 box-sizing: border-box;
 filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.1));
@@ -23,8 +23,8 @@ letter-spacing: 0em;
 text-align: center;
 width: 137px;
 height: 55px;
-left: 1204.87px;
-top: 32px;
+left: 70%;
+top: 5%;
 background: #3DB46D;
 box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
 border-radius: 12px;
@@ -35,7 +35,89 @@ border-radius: 12px;
     color: black;
 }
 
+.container {
+    position: absolute;
+    width: 620px;
+    height: 367.2px;
+    left: 30%;
+    top: 20%;
+    background-color:rgba(180, 171, 171, 0.658);
+    border-radius: 12px;
+}
 
+#addPhoto{
+position: absolute;
+width: 195px;
+height: 33px;
+left: 456.36px;
+top: 274.64px;
+font-family: Noto Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 33px;
+}
 
+.input{
+width: 552.33px;
+height: 55px;
+border-radius: 12px;
+border: 1px solid #4F4F4F;
+box-sizing: border-box;
+filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.1));
+margin: 5px;
 
+}
+.label{
+width: 37px;
+height: 19px;
+font-family: Noto Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 19px;
+color:black;
+margin: 5px;
+
+}
+#cancelBtn{
+width: 60px;
+height: 40px;
+font-family: Noto Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 22px;
+background-color: #BDBDBD;
+margin: 15px;
+cursor: pointer;
+}
+#submitBtn{
+width: 105px;
+height: 55px;
+background: #3DB46D;
+box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+border-radius: 12px;
+font-family: Noto Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 22px;
+margin: 5px;
+cursor: pointer;
+}
+
+.item {
+    position: relative;
+    top: 150px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 10px;
+}
+
+img{
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+}
 
