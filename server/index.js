@@ -21,7 +21,6 @@ app.get('/data', function (req, res) {
 app.post('/addPhoto', function(req, res){
   const photo= req.body.photo;
   const label = req.body.label;
-console.log(req.body);
   db.query('INSERT INTO items (photo, label) VALUES (?, ?)', 
     [photo,label],
   (err, result) => {
@@ -32,6 +31,18 @@ console.log(req.body);
     }
   }
   )
+})
+
+app.delete('/item/delete:id', function (req, res){
+  const id = req.params.id
+  db.query('DELETE FROM items WHERE id = ?',id, 
+  function (err, result){
+    if (err) {
+      res.status(400).send(err);
+    } else {
+      res.status(200).send(result);
+    }
+  })
 })
 
 app.listen(port, () => {

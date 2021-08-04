@@ -32,14 +32,14 @@ export default class App extends Component {
         <div>
             <div>
                 <button className="addBtn" onClick={()=>{this.setState({toggle:!toggle})} } > Add a photo </button>
-                </div>
+            </div>
+            <div> 
+                <List items={items} />
+            </div>
                 {
                     toggle? <Create toggle={toggle}/>: null
                 }
-                <div>
-                <List items={items} />
-                </div>  
-            </div>
+        </div>
         )
     }
 }

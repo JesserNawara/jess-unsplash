@@ -15,7 +15,7 @@ export default function Create() {
         })
     }
     return (
-        <div className="container">
+        <div>
             <form className="createForm" >
             <h3 id="addphoto" >Add a new photo</h3>
             <label className="label" >Label</label> <br />
@@ -26,7 +26,7 @@ export default function Create() {
             <input className="input" type="text" placeholder="https://images.unsplash.com/photo-1584395630827-860eee694d7b?ixlib=r..."
             onChange={(e)=>{setPhoto(e.target.value)}}
             /> <br />
-            <button id="cancelBtn" >Cancel</button>
+            <button id="cancelBtn" onClick={()=>{props.toggle===false}} >Cancel</button>
             <button id="submitBtn" type="submit" onClick={addPhoto}>Submit</button>
             </form>
         </div>
