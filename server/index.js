@@ -18,11 +18,10 @@ app.get('/data', function (req, res) {
   })
 })
 
-app.post('/addPhoto', function(req, res){
-  const photo= req.body.photo;
+app.post('/addlabel', function(req, res){
   const label = req.body.label;
   db.query('INSERT INTO items (photo, label) VALUES (?, ?)', 
-    [photo,label],
+    label,
   (err, result) => {
     if (err) {
       res.status(400).send(err);

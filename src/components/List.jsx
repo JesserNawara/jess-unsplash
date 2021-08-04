@@ -14,7 +14,7 @@ export default function List(props) {
     }
 
     return (
-        <div >
+        <div className="items">
             <input className="searchBar" type="text" placeholder="Search by name"
             onChange={(e)=>setSearchedItem(e.target.value)}
             />
@@ -22,7 +22,7 @@ export default function List(props) {
             {filteredItems.map((item, key) => 
                 <div  key={key} >
                     <div className="details">
-                    <img id="itemimg" src={item.photo}  />
+                    {/* <img id="itemimg" src={item.photo}  /> */}
                     <div id="itemlabel" > {item.label} </div>
                     <button id="deleteBtn" onClick={(id)=>{deleteItem(item.id)}} >delete</button>
                     </div>

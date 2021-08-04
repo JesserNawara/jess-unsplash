@@ -10,6 +10,18 @@
     border-radius: 12px;
 }
 
+.app{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* .items{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+} */
+
 .addBtn {
     /* position: relative; */
     position:relative;
@@ -31,13 +43,23 @@
     border-radius: 12px;
 }
 
+/* .modalBackground {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(128, 128, 128, 0.233);
+    position:relative;
+    display: flex;
+    justify-content:center; */
+/* } */
+
 .createForm {
     position:absolute;
     top: 30%;
     left:420px;
     width: 620px;
     height: 367.2px;
-    background-color:rgb(255, 255, 255);
+    background-color:rgba(200,200,200);
     border-radius: 12px;
     padding: 15px;
 }
@@ -56,7 +78,6 @@
     width: 37px;
     height: 19px;
     font-family: Noto Sans;
-    font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 19px;
@@ -162,3 +183,4 @@
 .details:hover #itemlabel{
     opacity: 1;
 }
+

@@ -10,7 +10,7 @@ export default class App extends Component {
         super(props);
         this.state = {
             items: [],
-            toggle: false,
+            toggle: false
         }
         this.fetchData= this.fetchData.bind(this);
     }
@@ -26,11 +26,12 @@ export default class App extends Component {
         })
     }
 
+
     render() {
     const {items, toggle} = this.state
     return (
-        <div>
-            <div>
+        <div className="app" >
+            <div >
                 <button className="addBtn" onClick={()=>{this.setState({toggle:!toggle})} } > Add a photo </button>
             </div>
             <div> 
@@ -38,7 +39,7 @@ export default class App extends Component {
             </div>
                 {
                     toggle? <Create toggle={toggle}/>: null
-                }
+                } 
         </div>
         )
     }

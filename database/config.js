@@ -8,7 +8,6 @@ module.exports = (db) => {
   return db.queryAsync(`
     CREATE TABLE IF NOT EXISTS items (
       id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-      photo VARCHAR(1000) NOT NULL,
       label VARCHAR(255) NOT NULL
     );`)
     .error(err => {
