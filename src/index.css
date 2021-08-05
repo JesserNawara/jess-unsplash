@@ -1,54 +1,40 @@
 .searchBar{
-    position: relative;
+    position: absolute;  
     width: 300px;
     height: 55px;
     top : 20px;
-    left: 15%;
+    left: 200px;
     border: 1px solid #BDBDBD;
     box-sizing: border-box;
     filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.1));
     border-radius: 12px;
 }
 
-.app{
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-}
-
-.items{
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-}
-
 .addBtn {
-    /* position: relative; */
-    position:relative;
-    top: 68px;
+    position:absolute;
+    top: 20px;
     left: 80%;
     width: 137px;
     height: 55px;
-    color: white;
-    font-family: cursive;
     cursor: pointer;
+    color: white;
+    background: #3DB46D;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    font-family: cursive;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: 22px;
-    letter-spacing: 0em;
     text-align: center;
-    background: #3DB46D;
-    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 12px;
 }
 
 .modalBackground {
-    position: relative;
-    bottom: 80%;
+    position: absolute;
+    top: 0%;
     right: 5px;
     width: 100vw;
-    height: 130vh;
+    height:150vh;
     background-color: rgba(128, 128, 128, 0.473);
     display: flex;
     justify-content:center;
@@ -139,7 +125,7 @@
 
 .item {
     position: relative;
-    top: 70px;
+    top: 130px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 10px;
@@ -158,7 +144,7 @@
 
 .details #itemlabel {
     position: relative;
-    width: 250px;
+    width: 20px;
     bottom: 20%;
     left:5px;
     color: white;
@@ -196,6 +182,5 @@
 
 .details:hover #itemlabel{
     opacity: 1;
-    visibility: ;
 }
 

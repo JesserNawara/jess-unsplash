@@ -31,12 +31,10 @@ export default class App extends Component {
     const {items, toggle} = this.state
     return (
         <div className="app" >
-            <div >
-                <button className="addBtn" onClick={()=>{this.setState({toggle:!toggle})} } > Add a photo </button>
+            <div>
+                <button className="addBtn" onClick={()=>{this.setState({toggle:!toggle})} } > Add a photo </button>            
             </div>
-            <div> 
-                <List items={items} />
-            </div>
+            <List items={items} />
                 {
                     toggle? <Create toggle={toggle}/>: null
                 } 
