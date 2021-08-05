@@ -16,11 +16,11 @@
     height: 100vh;
 }
 
-/* .items{
+.items{
     position: absolute;
     width: 100vw;
     height: 100vh;
-} */
+}
 
 .addBtn {
     /* position: relative; */
@@ -43,25 +43,36 @@
     border-radius: 12px;
 }
 
-/* .modalBackground {
-    position: absolute;
+.modalBackground {
+    position: relative;
+    bottom: 80%;
+    right: 5px;
     width: 100vw;
-    height: 100vh;
-    background-color: rgba(128, 128, 128, 0.233);
-    position:relative;
+    height: 130vh;
+    background-color: rgba(128, 128, 128, 0.473);
     display: flex;
-    justify-content:center; */
-/* } */
+    justify-content:center;
+}
 
 .createForm {
     position:absolute;
-    top: 30%;
+    top: 20%;
     left:420px;
     width: 620px;
-    height: 367.2px;
-    background-color:rgba(200,200,200);
+    height: 300px;
+    background-color:rgb(255, 255, 255);
     border-radius: 12px;
     padding: 15px;
+}
+
+#file{
+    margin: 20px;
+    font-family: Noto Sans;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+    color:black;
+    cursor: pointer;
 }
 
 .input{
@@ -82,7 +93,7 @@
     font-size: 20px;
     line-height: 19px;
     color:black;
-    margin: 5px;
+    margin: 10px;
 
 }
 
@@ -122,6 +133,9 @@
     cursor: pointer;
 }
 
+#checkBtn{
+    cursor: pointer;
+}
 
 .item {
     position: relative;
@@ -182,5 +196,6 @@
 
 .details:hover #itemlabel{
     opacity: 1;
+    visibility: ;
 }
 
