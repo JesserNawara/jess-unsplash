@@ -32,9 +32,9 @@
 .modalBackground {
     position: absolute;
     top: 0%;
-    right: 5px;
+    left:-1%;
     width: 100vw;
-    height:150vh;
+    height: 500vh;
     background-color: rgba(128, 128, 128, 0.473);
     display: flex;
     justify-content:center;
@@ -42,7 +42,7 @@
 
 .createForm {
     position:absolute;
-    top: 20%;
+    top: 5%;
     left:420px;
     width: 620px;
     height: 300px;
