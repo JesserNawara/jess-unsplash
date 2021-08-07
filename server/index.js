@@ -74,17 +74,10 @@ app.post("/upload", upload.single('image'), (req, res, err) => {
       const label = req.body.label
       const image = response.secure_url;
       db.query(sqlInsert, [image, label], (err, result) => {
-        if(err){
-          console.log(err);
-          res.send({
-            msg: "AAAAAA sth went wrong bruv"+err
-          })
-        }
-        if (result) {
-          res.send({ 
-            data: result,
-            msg: 'Your image has been updated successfully!'
-          })
+        if (err) {
+          res.status(400).send(err);
+        } else {
+          res.status(200).send(result);
         }
       })
     })

@@ -3,21 +3,17 @@ import axios from 'axios';
 
 export default function Create() {
     const [label, setLabel] = useState("");
-    const [image, setImage] = useState("");
     const [uploadedImage, setUploadedImage] = useState("");
 
-    const uploadImage= (e)=>{
-        e.preventDefault();
+    const uploadImage= ()=>{
         const formData = new FormData();
         formData.append('image', uploadedImage);
         formData.append('label', label);
         formData.append('upload_preset', "jessStorage");
-        console.log(uploadedImage);
 
-      axios.post('/upload', formData).then((result)=>{
-          console.log(result);
-      })
-        
+      axios.post('/upload', formData).then((res)=>{
+        console.log(res, "uploaded !");
+    })
     }
 
     return (
@@ -30,7 +26,7 @@ export default function Create() {
             /> <br />
             <input id="file" type="file"  onChange={(event)=>{setUploadedImage(event.target.files[0])}}/>
             <br />
-            <button id="cancelBtn" onClick={()=>{props.toggle===false}} >Cancel</button>
+            <span id="cancelBtn" onClick={()=>{props.toggle===false}} >Cancel</span>
             <button id="submitBtn"  onClick={uploadImage}>Submit</button>
             </form>
         </div>

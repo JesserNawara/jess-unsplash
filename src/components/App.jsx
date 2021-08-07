@@ -17,6 +17,7 @@ export default class App extends Component {
 
     componentDidMount(){
         this.fetchData()
+        setInterval(this.fetchData, 100)
     }
 
     fetchData(){
