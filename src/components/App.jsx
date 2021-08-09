@@ -37,7 +37,7 @@ export default class App extends Component {
             </div>
             <List items={items} />
                 {
-                    toggle? <Create toggle={toggle}/>: null
+                    toggle? <Create handleClick={()=>{this.setState({toggle:!toggle})}}/>: null
                 } 
         </div>
         )

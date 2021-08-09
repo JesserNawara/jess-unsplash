@@ -131,14 +131,14 @@
     position: relative;
     top: 130px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     grid-gap: 10px;
 }
 
 .item #itemimg{
     position: relative;
-    width: 300px;
-    height: 400px;
+    width: 400px;
+    height: 500px;
     border-radius: 16px;
 }
 
@@ -167,8 +167,8 @@
 
 .details #deleteBtn {
     position: relative;
-    bottom:90%;
-    left:220px;
+    bottom:85%;
+    left:300px;
     color: #EB5757;
     cursor: pointer;
     width: 63px;

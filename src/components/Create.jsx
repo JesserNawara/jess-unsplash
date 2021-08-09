@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-export default function Create() {
+export default function Create(props) {
     const [label, setLabel] = useState("");
     const [uploadedImage, setUploadedImage] = useState("");
 
@@ -26,7 +26,7 @@ export default function Create() {
             /> <br />
             <input id="file" type="file"  onChange={(event)=>{setUploadedImage(event.target.files[0])}}/>
             <br />
-            <span id="cancelBtn" onClick={()=>{props.toggle===false}} >Cancel</span>
+            <span id="cancelBtn" onClick={props.handleClick} >Cancel</span>
             <button id="submitBtn"  onClick={uploadImage}>Submit</button>
             </form>
         </div>
